@@ -85,7 +85,9 @@ ul li{font-weight:normal;}
 .wpcf7-text, .wpcf7-textarea{width:100%;padding:10px;}
 .caras_felizes{background-image:url('https://res.cloudinary.com/quest-group/image/upload/v1517336251/businessman.png');width:334px;height:500px;margin-bottom:-90px;display:inline-block;vertical-align:top;}
 ._telefone{width:calc(99% - 334px);display:inline-block;vertical-align:top;padding:0 9%;}
-._telefone input{font-size:28px;font-weight:800;padding:13px 13px 13px 65px;font-family:'Open Sans', sans-serif;width:100%;margin:7px 0 14px;background-repeat:no-repeat;background-position:10px;border:1px solid #DDD;transition:all ease .2s;}
+._telefone input, ._telefone select{font-size:28px;font-weight:800;padding:13px 13px 13px 65px;font-family:'Open Sans', sans-serif;width:100%;margin:7px 0 14px;background-repeat:no-repeat;background-position:10px;border:1px solid #DDD;transition:all ease .2s;}
+._telefone select{padding:13px 65px 13px 13px !important;}
+._telefone input, ._telefone select{font-size:28px;font-weight:800;padding:13px 13px 13px 65px;font-family:'Open Sans', sans-serif;width:100%;margin:7px 0 14px;background-repeat:no-repeat;background-position:10px;border:1px solid #DDD;transition:all ease .2s;}
 ._telefone input:hover{border:1px solid #BBB;background-color:#EEE;}
 ._telefone input[type="text"]{background-image:url('https://res.cloudinary.com/quest-group/image/upload/v1517353564/user.png');}
 ._telefone input[type="tel"]{background-image:url('https://res.cloudinary.com/quest-group/image/upload/v1517353564/phone.png');}
@@ -258,7 +260,8 @@ Drª Suzi<br/>Clín. Audição, Manaus
 <form action=enviar.php method=POST>
 <label>Em qual serviço você está interessado?</label>
 <select name=interesse>
-<option value="Nenhum">Selecione...</option>
+<option value="Nenhum"></option>
+<option value="Laudos">Emissão de Laudos Online</option>
 </select>
 <label>Digite seu Nome no Campo Abaixo:</label>
 <input type=text name=nome />
