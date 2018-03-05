@@ -4,8 +4,8 @@ function pegaValor($valor) {
     return isset($_POST[$valor]) ? $_POST[$valor] : '';
 }
 
-function enviaEmail($de, $assunto, $mensagem, $para, $email_servidor) {
-    $headers = "From: $email_servidor\r\n" .
+function enviaEmail($de, $assunto, $mensagem, $para) {
+    $headers = "From: $de\r\n" .
                "Reply-To: $de\r\n" .
                "X-Mailer: PHP/" . phpversion() . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
@@ -14,7 +14,6 @@ function enviaEmail($de, $assunto, $mensagem, $para, $email_servidor) {
 }
 
 $de = "gerencia@questgroup.com.br";
-$email_servidor = "gerencia@questgroup.com.br";
 $para = "ti@questgroup.com.br";
 $nome = pegaValor("nome");
 $interesse = pegaValor("interesse");
