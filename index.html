@@ -83,16 +83,17 @@ ul li{font-weight:normal;}
 .med-consul iframe{width:100%;height:1200px;}
 .form-contato{width:50%;display:inline-block;}
 .wpcf7-text, .wpcf7-textarea{width:100%;padding:10px;}
-.wpcf7-text{}
 .caras_felizes{background-image:url('https://res.cloudinary.com/quest-group/image/upload/v1517336251/businessman.png');width:334px;height:500px;margin-bottom:-90px;display:inline-block;vertical-align:top;}
 ._telefone{width:calc(99% - 334px);display:inline-block;vertical-align:top;padding:0 9%;}
-._telefone .wpcf7-text{font-size:28px;font-weight:800;padding:13px 13px 13px 65px;font-family:'Open Sans', sans-serif;width:100%;margin-top:7px;background-repeat:no-repeat;background-position:10px;border:1px solid #DDD;}
-._telefone .wpcf7-text:hover{border:1px solid #BBB;background-color:#EEE;}
+._telefone input{font-size:28px;font-weight:800;padding:13px 13px 13px 65px;font-family:'Open Sans', sans-serif;width:100%;margin:7px 0 14px;background-repeat:no-repeat;background-position:10px;border:1px solid #DDD;transition:all ease .2s;}
+._telefone input:hover{border:1px solid #BBB;background-color:#EEE;}
 ._telefone input[type="text"]{background-image:url('https://res.cloudinary.com/quest-group/image/upload/v1517353564/user.png');}
 ._telefone input[type="tel"]{background-image:url('https://res.cloudinary.com/quest-group/image/upload/v1517353564/phone.png');}
-._telefone .wpcf7-submit{float:right;background:#1892cf;border-radius:5px;padding:7px 14px;color:white;border:none;cursor:pointer;font-size:16px;font-weight:bold;}
-._telefone .wpcf7-submit:hover{background:#0b224e;color:white;}
+._telefone input[type="checkbox"]{width:20px;cursor:pointer;}
+._telefone input[type="submit"]{float:right;background:#1892cf;border-radius:5px;padding:7px 14px;color:white;border:none;cursor:pointer;font-size:16px;font-weight:bold;width:auto;margin:0;}
+._telefone input[type="submit"]:hover{background:#0b224e;color:white;}
 ._telefone div.wpcf7-response-output{margin:2em 0 1em;}
+._telefone label{font-weight:bold;}
 .lightboxcontainer .wpcf7-form input[type="text"]{border-top-left-radius:5px;border-top-right-radius:5px;border:1px solid #BBB;border-bottom:0;}
 .lightboxcontainer .wpcf7-form input[type="email"]{border:1px solid #BBB;border-bottom:0;}
 .lightboxcontainer .wpcf7-form textarea{font-family:'Open Sans',sans-serif;border-bottom-left-radius:5px;border-bottom-right-radius:5px;border:1px solid #BBB;height:150px;}
@@ -120,9 +121,6 @@ header .busca{position:relative;}
 article{font-size:16px;}
 .img-post{margin:25px 0;}
 .type-post footer{margin-bottom:30px;}
-#wrapper{margin-bottom:90px;}
-.lupa{width:34px;height:34px;position:absolute;right:0;top:8px;border-bottom-left-radius:0;border-top-left-radius:0;background-color:#1892cf;border:none;transition:all ease .2s;background-image:url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI1MC4zMTMgMjUwLjMxMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjUwLjMxMyAyNTAuMzEzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnIGlkPSJTZWFyY2giPgoJPHBhdGggc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkOyIgZD0iTTI0NC4xODYsMjE0LjYwNGwtNTQuMzc5LTU0LjM3OGMtMC4yODktMC4yODktMC42MjgtMC40OTEtMC45My0wLjc2ICAgYzEwLjctMTYuMjMxLDE2Ljk0NS0zNS42NiwxNi45NDUtNTYuNTU0QzIwNS44MjIsNDYuMDc1LDE1OS43NDcsMCwxMDIuOTExLDBTMCw0Ni4wNzUsMCwxMDIuOTExICAgYzAsNTYuODM1LDQ2LjA3NCwxMDIuOTExLDEwMi45MSwxMDIuOTExYzIwLjg5NSwwLDQwLjMyMy02LjI0NSw1Ni41NTQtMTYuOTQ1YzAuMjY5LDAuMzAxLDAuNDcsMC42NCwwLjc1OSwwLjkyOWw1NC4zOCw1NC4zOCAgIGM4LjE2OSw4LjE2OCwyMS40MTMsOC4xNjgsMjkuNTgzLDBDMjUyLjM1NCwyMzYuMDE3LDI1Mi4zNTQsMjIyLjc3MywyNDQuMTg2LDIxNC42MDR6IE0xMDIuOTExLDE3MC4xNDYgICBjLTM3LjEzNCwwLTY3LjIzNi0zMC4xMDItNjcuMjM2LTY3LjIzNWMwLTM3LjEzNCwzMC4xMDMtNjcuMjM2LDY3LjIzNi02Ny4yMzZjMzcuMTMyLDAsNjcuMjM1LDMwLjEwMyw2Ny4yMzUsNjcuMjM2ICAgQzE3MC4xNDYsMTQwLjA0NCwxNDAuMDQzLDE3MC4xNDYsMTAyLjkxMSwxNzAuMTQ2eiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);background-repeat:no-repeat;background-position:center center;}
-.lupa:hover{background-color:#38bfef;}
 .servicos{margin-bottom:30px;}
 .servicos h4{margin-bottom:2px;}
 .servicos li{background:rgba(24,146,207,.15);padding:50px 12px 12px;border-radius:5px;margin-top:10px;}
@@ -257,7 +255,18 @@ Drª Suzi<br/>Clín. Audição, Manaus
 <h2>Quer uma Solução específica para sua Empresa? Fale conosco por Telefone. Nós te ligamos!</h2>
 <div class=caras_felizes></div>
 <div class=_telefone>
-<input type=text>
+<form action=enviar.php method=POST>
+<label>Em qual serviço você está interessado?</label>
+<select name=interesse>
+<option value="Nenhum">Selecione...</option>
+</select>
+<label>Digite seu Nome no Campo Abaixo:</label>
+<input type=text name=nome />
+<label>Digite seu Telefone com DDD no Campo Abaixo:</label>
+<input type=tel name=telefone />
+<input type=checkbox name=aceito /> Aceito receber uma ligação da Quest Group.
+<input type=submit value=Enviar />
+</form>
 </div>
 </div>
 </div>
