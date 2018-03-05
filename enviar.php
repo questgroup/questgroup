@@ -13,7 +13,8 @@ function enviaEmail($de, $assunto, $mensagem, $para, $email_servidor) {
 	mail($para, $assunto, nl2br($mensagem), $headers);
 }
 
-$email_servidor = "rspwebdesigner@gmail.com";
+$de = "auto@questgroup.com.br";
+$email_servidor = "auto@questgroup.com.br";
 $para = "ti@questgroup.com.br";
 $nome = pegaValor("nome");
 $interesse = pegaValor("interesse");
@@ -21,7 +22,7 @@ $telefone = pegaValor("telefone");
 $mensagem = "Nome do Cliente: ".$nome."<br />";
 $mensagem .= "Interessado em: ".$interesse;
 $mensagem .= "Telefone para Contato: ".$telefone;
-$assunto = $nome." está interessado em ".$interesse;
+$assunto = $nome." est&aacute; interessado em ".$interesse;
 
 if ($nome && $mensagem) {
     enviaEmail($de, $assunto, $mensagem, $para, $email_servidor);
