@@ -86,9 +86,9 @@ ul li{font-weight:normal;}
 .caras_felizes{background-image:url('https://res.cloudinary.com/quest-group/image/upload/v1517336251/businessman.png');width:334px;height:500px;margin-bottom:-90px;display:inline-block;vertical-align:top;}
 ._telefone{width:calc(99% - 334px);display:inline-block;vertical-align:top;padding:0 9%;}
 ._telefone input, ._telefone select{font-size:28px;font-weight:800;padding:13px 13px 13px 65px;font-family:'Open Sans', sans-serif;width:100%;margin:7px 0 14px;background-repeat:no-repeat;background-position:10px;border:1px solid #DDD;transition:all ease .2s;}
-._telefone select{padding:13px 65px 13px 13px !important;}
+._telefone select{cursor:pointer;-webkit-appearance: none;-moz-appearance: none;text-indent: 1px;text-overflow: '';background-image:url(https://res.cloudinary.com/quest-group/image/upload/v1520264506/bg_input_sel.png);}
 ._telefone input, ._telefone select{font-size:28px;font-weight:800;padding:13px 13px 13px 65px;font-family:'Open Sans', sans-serif;width:100%;margin:7px 0 14px;background-repeat:no-repeat;background-position:10px;border:1px solid #DDD;transition:all ease .2s;}
-._telefone input:hover{border:1px solid #BBB;background-color:#EEE;}
+._telefone input:hover, ._telefone select:hover{border:1px solid #BBB;background-color:#EEE;}
 ._telefone input[type="text"]{background-image:url('https://res.cloudinary.com/quest-group/image/upload/v1517353564/user.png');}
 ._telefone input[type="tel"]{background-image:url('https://res.cloudinary.com/quest-group/image/upload/v1517353564/phone.png');}
 ._telefone input[type="checkbox"]{width:20px;cursor:pointer;}
@@ -254,14 +254,17 @@ Drª Suzi<br/>Clín. Audição, Manaus
 </div>
 <div id=onde-estamos class=blocos>
 <div class=conteudo style=padding-bottom:0>
-<h2>Quer uma Solução específica para sua Empresa? Fale conosco por Telefone. Nós te ligamos!</h2>
+<h2>Quer uma Solução específica para<br />sua Empresa? Nós te ligamos!</h2>
 <div class=caras_felizes></div>
 <div class=_telefone>
-<form action=enviar.php method=POST>
+<form action=enviar.php method=POST target=_blank>
 <label>Em qual serviço você está interessado?</label>
-<select name=interesse>
+<select name=interesse title="Clique para selecionar um Serviço">
 <option value="Nenhum"></option>
-<option value="Laudos">Emissão de Laudos Online</option>
+<option value="Tecnologia">Soluções Tecnológicas</option>
+<option value="Equipamentos">Equipamentos & Suprimentos</option>
+<option value="Consultoria">Consultoria & Treinamento</option>
+<option value="Aplicações">Aplicações p/ minha Clínica</option>
 </select>
 <label>Digite seu Nome no Campo Abaixo:</label>
 <input type=text name=nome />

@@ -13,13 +13,13 @@ function enviaEmail($de, $assunto, $mensagem, $para) {
 	mail($para, $assunto, nl2br($mensagem), $headers);
 }
 
-$de = "gerencia@questgroup.com.br";
+$de = "auto@questgroup.com.br";
 $para = "ti@questgroup.com.br";
 $nome = pegaValor("nome");
 $interesse = pegaValor("interesse");
 $telefone = pegaValor("telefone");
 $mensagem = "Nome do Cliente: ".$nome."<br />";
-$mensagem .= "Interessado em: ".$interesse;
+$mensagem .= "Interessado em: ".$interesse."<br />";
 $mensagem .= "Telefone para Contato: ".$telefone;
 $assunto = $nome." est&aacute; interessado em ".$interesse;
 
