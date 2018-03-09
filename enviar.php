@@ -21,7 +21,7 @@ $telefone = pegaValor("telefone");
 $mensagem = "Nome do Cliente: ".$nome."<br />";
 $mensagem .= "Interessado em: ".$interesse."<br />";
 $mensagem .= "Telefone para Contato: ".$telefone;
-$assunto = $nome." est&aacute; interessado em ".$interesse;
+$assunto = $nome." esta interessado em ".$interesse;
 
 if ($nome && $mensagem) {
     enviaEmail($de, $assunto, $mensagem, $para, $email_servidor);
