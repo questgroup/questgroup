@@ -49,6 +49,11 @@ p{margin:10px 0;}
 #equip::before{background-position:-64px 0;}
 #consul::before{background-position:-128px 0;}
 #agen::before{background-position:-192px 0;}
+#tele-mob{display:inline-block;}
+#tele-mob::before{background-position:0 0}
+#equip-mob::before{background-position:-64px 0;}
+#consul-mob::before{background-position:-128px 0;}
+#agen-mob::before{background-position:-192px 0;}
 .empresas h3{font-weight:bold;font-size:18px;color:gray;margin:0;}
 .empresas span{color:#0b224e;}
 ul{padding:0;list-style-type:none;}
@@ -146,19 +151,22 @@ aside .widget_categories .screen-reader-text{display:none;}
 .btns-nav{position:absolute;width:100%;bottom:0;cursor:pointer;}
 .btns-nav .prox{float:right;font-weight:bold;padding-right:30px;}
 .btns-nav .ante{float:left;font-weight:bold;padding-left:30px;}
-.btns-nav .prox::after{content:url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDI5Mi4zNTkgMjkyLjM1OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjkyLjM1OSAyOTIuMzU5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTIyMi45NzksMTMzLjMzMUw5NS4wNzMsNS40MjRDOTEuNDU2LDEuODA3LDg3LjE3OCwwLDgyLjIyNiwwYy00Ljk1MiwwLTkuMjMzLDEuODA3LTEyLjg1LDUuNDI0ICAgYy0zLjYxNywzLjYxNy01LjQyNCw3Ljg5OC01LjQyNCwxMi44NDd2MjU1LjgxM2MwLDQuOTQ4LDEuODA3LDkuMjMyLDUuNDI0LDEyLjg0N2MzLjYyMSwzLjYxNyw3LjkwMiw1LjQyOCwxMi44NSw1LjQyOCAgIGM0Ljk0OSwwLDkuMjMtMS44MTEsMTIuODQ3LTUuNDI4bDEyNy45MDYtMTI3LjkwN2MzLjYxNC0zLjYxMyw1LjQyOC03Ljg5Nyw1LjQyOC0xMi44NDcgICBDMjI4LjQwNywxNDEuMjI5LDIyNi41OTQsMTM2Ljk0OCwyMjIuOTc5LDEzMy4zMzF6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);position:absolute;top:9px;right:8px;}
-.btns-nav .ante::before{content:url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDI5Mi4zNTkgMjkyLjM1OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjkyLjM1OSAyOTIuMzU5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTIyMi45NzksNS40MjRDMjE5LjM2NCwxLjgwNywyMTUuMDgsMCwyMTAuMTMyLDBjLTQuOTQ5LDAtOS4yMzMsMS44MDctMTIuODQ4LDUuNDI0TDY5LjM3OCwxMzMuMzMxICAgYy0zLjYxNSwzLjYxNy01LjQyNCw3Ljg5OC01LjQyNCwxMi44NDdjMCw0Ljk0OSwxLjgwOSw5LjIzMyw1LjQyNCwxMi44NDdsMTI3LjkwNiwxMjcuOTA3YzMuNjE0LDMuNjE3LDcuODk4LDUuNDI4LDEyLjg0OCw1LjQyOCAgIGM0Ljk0OCwwLDkuMjMyLTEuODExLDEyLjg0Ny01LjQyOGMzLjYxNy0zLjYxNCw1LjQyNy03Ljg5OCw1LjQyNy0xMi44NDdWMTguMjcxQzIyOC40MDUsMTMuMzIyLDIyNi41OTYsOS4wNDIsMjIyLjk3OSw1LjQyNHoiIGZpbGw9IiNGRkZGRkYiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);position:absolute;top:9px;left:8px;}
 .desabilitado{background:#AAA !important;cursor:none !important;}
 .btn-chat{position:fixed;bottom:-5px;right:0;padding-right:20px;}
 .btn-chat img{margin-right: -4px;}
 .btn-chat-mob{display:none;position:fixed;bottom:0;width:200px;left:50%;margin-left:-100px;text-align:center;}
+.fazer-mob{display:none;}
 @media screen and (max-width:768px){
 .capa{background:#d1d9e4;}
 .logo{margin: 30px 0 0 calc(50% - 82.5px);}
-.scroll{display:none;}
+.scroll, #think, .fazer{display:none;}
 .slogan{width:100%;font-size:15px;line-height:20px;padding:0 20px;margin:30px 0;}
 .btn-chat{display:none;}
 .btn-chat-mob{display:block;}
+.fazer-mob{display:block;width:100%;text-align:center;}
+.empresas{width:100%;}
+.logos{margin: 20px 0 0;}
+.btns-nav .prox,.btns-nav .ante{float:none;display:block;margin:15px;}
 }
 </style>
 </head>
@@ -215,7 +223,7 @@ A Quest Group traz soluções completas nas áreas de Medicina Ocupacional e Dia
 Medical Consulting
 </a>
 <div class=btns-nav>
-<a class="ante btn" data-isso="consul" data-prox="equip" onclick="hide_show(this);">Consultoria e Treinamento</a>
+<a class="ante btn" data-isso="consul" data-prox="equip" onclick="hide_show(this);">Equipamentos e Suprimentos Médicos</a>
 <a class="prox btn" data-isso="consul" data-prox="agen" onclick="hide_show(this);">Agência Digital</a>
 </div>
 </li>
@@ -232,6 +240,49 @@ Med Apps
 </li>
 </ul>
 </div>
+<!-- Fazer Mob -->
+<div class=fazer-mob>
+	<ul>
+		<li id=tele-mob class=empresas>
+			<h3>Soluções Tecnológicas aliadas à Medicina Ocupacional e Diagnóstica</h3>
+			<a href="https://telemedic.top" target=_blank title="Armazenamento de Exames e Emissão de Laudos">
+				<div id=telemedic class=logos></div>
+			</a>
+			<a href="https://telemedic.top" target=_blank title="Agendamento de Exames Laboratoriais e de Imagem">
+				<div id=onlabor class=logos></div>
+			</a>
+			<div class=btns-nav>
+				<a class="prox btn" data-isso="tele-mob" data-prox="equip-mob" onclick="hide_show(this);">Equipamentos & Suprimentos</a>
+			</div>
+		</li>
+		<li id=equip-mob class=empresas>
+			<h3>Equipamentos e Suprimentos Médicos</h3>
+			<a href="https://supportmed.com.br" target=_blank>
+				<div id=supportmed class=logos></div>
+			</a>
+			<div class=btns-nav>
+				<a class="ante btn" data-isso="equip-mob" data-prox="tele-mob" onclick="hide_show(this);">Soluções Tecnológicas</a>
+				<a class="prox btn" data-isso="equip-mob" data-prox="consul-mob" onclick="hide_show(this);">Consultoria e Treinamento</a>
+			</div>
+		</li>
+		<li id=consul-mob class=empresas>
+			<h3>Consultoria e Treinamento</h3>
+			<a href="http://questgroup.com.br/consultoria-abertura-clinicas-medicas/" target=_blank>Medical Consulting</a>
+			<div class=btns-nav>
+				<a class="ante btn" data-isso="consul-mob" data-prox="equip-mob" onclick="hide_show(this);">Equipamentos e Suprimentos Médicos</a>
+				<a class="prox btn" data-isso="consul-mob" data-prox="agen-mob" onclick="hide_show(this);">Agência Digital</a>
+			</div>
+		</li>
+		<li id=agen-mob class=empresas>
+			<h3>Agência Digital</h3>
+			<a href="http://questgroup.com.br/apps/" target=_blank>Med Apps</a>
+			<div class=btns-nav>
+				<a class="ante btn" data-isso="agen-mob" data-prox="consul-mob" onclick="hide_show(this);">Consultoria e Treinamento</a>
+			</div>
+		</li>
+	</ul>
+</div>
+<!-- Homem Pensando -->
 <div id=think></div>
 </div>
 </div>
