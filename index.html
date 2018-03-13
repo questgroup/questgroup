@@ -154,12 +154,12 @@ aside .widget_categories .screen-reader-text{display:none;}
 .desabilitado{background:#AAA !important;cursor:none !important;}
 .btn-chat{position:fixed;bottom:-5px;right:0;padding-right:20px;}
 .btn-chat img{margin-right: -4px;}
-.btn-chat-mob{display:none;position:fixed;bottom:0;width:200px;left:50%;margin-left:-100px;text-align:center;}
+.btn-chat-mob{display:none;position:fixed;bottom:0;width:32px;right:4px;}
 .fazer-mob{display:none;}
 @media screen and (max-width:768px){
 .capa{background:#d1d9e4;}
 .logo{margin: 30px 0 0 calc(50% - 82.5px);}
-.scroll, #think, .fazer{display:none;}
+#think, .fazer, .caras_felizes{display:none;}
 .slogan{width:100%;font-size:15px;line-height:20px;padding:0 20px;margin:30px 0;}
 .btn-chat{display:none;}
 .btn-chat-mob{display:block;}
@@ -169,6 +169,15 @@ aside .widget_categories .screen-reader-text{display:none;}
 .btns-nav .prox,.btns-nav .ante{float:none;display:block;margin:15px;}
 .blocos .conteudo{padding:20px;}
 .blocos h2{font-size:20px;margin-bottom:20px;}
+.depoimento{width:100%;}
+.depoimento .emp{width:70%;margin-left:30%;}
+.scroll{position:absolute;left:50%;margin-left:-18px;}
+._telefone {width: 100%;padding: 0;margin-bottom: 30px;}
+._telefone input[type="submit"]{width:100%;margin-top:10px;}
+.form-contato, .mapa, .form-contato, .mapa img{width:100%;}
+.form-contato, .mapa img{border-radius:0;margin-bottom: 30px;}
+.links{width:100%;display:inline-block;padding:0 10px;}
+#contato{padding:0 0 40px;}
 }
 </style>
 </head>
@@ -225,7 +234,7 @@ A Quest Group traz soluções completas nas áreas de Medicina Ocupacional e Dia
 Medical Consulting
 </a>
 <div class=btns-nav>
-<a class="ante btn" data-isso="consul" data-prox="equip" onclick="hide_show(this);">Equipamentos e Suprimentos Médicos</a>
+<a class="ante btn" data-isso="consul" data-prox="equip" onclick="hide_show(this);">Equipamentos & Suprimentos</a>
 <a class="prox btn" data-isso="consul" data-prox="agen" onclick="hide_show(this);">Agência Digital</a>
 </div>
 </li>
@@ -271,7 +280,7 @@ Med Apps
 			<h3>Consultoria e Treinamento</h3>
 			<a href="http://questgroup.com.br/consultoria-abertura-clinicas-medicas/" target=_blank>Medical Consulting</a>
 			<div class=btns-nav>
-				<a class="ante btn" data-isso="consul-mob" data-prox="equip-mob" onclick="hide_show(this);">Equipamentos e Suprimentos Médicos</a>
+				<a class="ante btn" data-isso="consul-mob" data-prox="equip-mob" onclick="hide_show(this);">Equipamentos & Suprimentos</a>
 				<a class="prox btn" data-isso="consul-mob" data-prox="agen-mob" onclick="hide_show(this);">Agência Digital</a>
 			</div>
 		</li>
@@ -319,7 +328,7 @@ Drª Suzi<br/>Clín. Audição, Manaus
 </div>
 <div id=onde-estamos class=blocos>
 <div class=conteudo style=padding-bottom:0>
-<h2>Quer uma Solução específica para<br />sua Empresa? Nós te ligamos!</h2>
+<h2>Quer uma Solução específica para sua Empresa? Nós te ligamos!</h2>
 <div class=caras_felizes></div>
 <div class=_telefone>
 <form action=enviar.php method=POST target=_blank>
@@ -335,7 +344,7 @@ Drª Suzi<br/>Clín. Audição, Manaus
 <input type=text name=nome onKeyUp="liberar()"/>
 <label>Digite seu Telefone com DDD no Campo Abaixo:</label>
 <input type=tel name=telefone onKeyUp="liberar()"/>
-<input type=checkbox name=aceito onChange="liberar()"/> Aceito receber uma ligação da Quest Group.
+<input type=checkbox name=aceito onChange="liberar()"/> Aceito receber ligações telefônicas.
 <input type=submit id=submit class=desabilitado value=Enviar disabled/>
 </form>
 </div>
@@ -345,7 +354,7 @@ Drª Suzi<br/>Clín. Audição, Manaus
 <div class=conteudo>
 <div class=mapa>
 <a href="https://goo.gl/maps/atx21eAchAp" target=_blank alt="Como Chegar à Quest Group" title="Como Chegar à Quest Group">
-<img width=570 height=450 src="https://res.cloudinary.com/quest-group/image/upload/v1517093662/quest_local.png">
+<img src="https://res.cloudinary.com/quest-group/image/upload/v1517093662/quest_local.png">
 </a>
 </div>
 <div class=links>
@@ -374,7 +383,7 @@ CEP: 13070-147
 <a href="https://questgroup.bitrix24.com.br/online/chat" target=_blank><img src="https://res.cloudinary.com/quest-group/image/upload/v1520542423/atendimento_quest_group_chat.png" width=264 alt="Fale com nossos Especialistas" /></a>
 </div>
 <div class=btn-chat-mob>
-<a href="https://api.whatsapp.com/send?phone=5519987569789&text=Olá!%20Estou%20interessado%20nos%20serviços%20da%20Quest%20Group.%20Por%20favor%20entre%20em%20contato%20comigo." target=_blank><img src="https://res.cloudinary.com/quest-group/image/upload/v1520363446/atend_whatsapp.png" width=172 alt="Atendimento via WhatsApp" /></a>
+<a href="https://api.whatsapp.com/send?phone=5519987569789&text=Olá!%20Estou%20interessado%20nos%20serviços%20da%20Quest%20Group.%20Por%20favor%20entre%20em%20contato%20comigo." target=_blank><img src="https://res.cloudinary.com/quest-group/image/upload/v1520944613/wapp.png" width=32 alt="Atendimento via WhatsApp" /></a>
 </div>
 </div>
 <script>function hide_show(este){
